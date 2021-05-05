@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:background="@color/green"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="添加待办事项"
+        android:textColor="@color/white"
+        android:textSize="22dp" />
+
+    <EditText
+        android:id="@+id/dialog_et_mContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:hint="请输入事项内容"
+        android:paddingLeft="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="请输入起始时间"
+
+            android:textSize="20dp"
+            android:textColor="@color/green"/>
+        <EditText
+            android:id="@+id/dialog_et_beginYear"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="2021"
+            android:paddingLeft="10dp" />
+        <EditText
+            android:id="@+id/dialog_et_beginMonth"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="5"
+            android:paddingLeft="10dp" />
+        <EditText
+            android:id="@+id/dialog_et_beginDay"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="5"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+            android:paddingLeft="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="请输入截止时间"
+            android:textSize="20dp"
+            android:textColor="@color/green"/>
+        <EditText
+            android:id="@+id/dialog_et_overYear"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="2021"
+            android:paddingLeft="10dp" />
+        <EditText
+            android:id="@+id/dialog_et_overMonth"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="5"
+            android:paddingLeft="10dp" />
+        <EditText
+            android:id="@+id/dialog_et_overDay"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="8"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialog_btn_confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:background="@color/green"
+            android:text="确定"
+            android:textSize="18dp"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/dialog_btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:background="@color/green"
+            android:text="取消"
+            android:textSize="18dp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>
